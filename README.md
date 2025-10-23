@@ -1,5 +1,8 @@
 
 # **Aprendizaje de Docker**
+#### Ficha: 3203084 
+#### Formación: ADSO 
+#### Nombre: Juan Pablo Mozuca Chaparro
 
 En este archivo explicare lo que aprendí de docker y lo voy a dividir en estos apartados:
 
@@ -72,5 +75,6 @@ A continuación voy a mostrar un ejemplo basico de una creación de un contenedo
 
 ## Anexos
 
-- Dockerhub, dónde puedes buscar todas las imágenes y es el repositorio de contenedores:  [Dockerhub][hub]
-[hub]: https://hub.docker.com/
+- Dockerhub, dónde puedes buscar todas las imágenes y es el repositorio de contenedores: [Docker Hub](https://hub.docker.com/)
+  
+- Y finalmente la documentación oficial de docker, con la que se entienden y explica el uso de este mismo: [Documentación oficial de Docker](https://docs.docker.com/)
