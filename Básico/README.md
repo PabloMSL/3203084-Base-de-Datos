@@ -71,6 +71,8 @@ Y al final crearemos bases de datos dentro de cada container, y es muy facil cre
 
 En Beekeper, tienes que darle en el botón select a database que parecer un buscador, y ahi añades tus database o bases de datos, curiosamente, es el unico limitado, ya que tienes que abrir otra ventana si quieres acceder a otra conexion
 
+![Titulo alterno](db_beekeeper.png)
+
 ## HeidiSQL
 
 En Heidisql es mas facil, ya que en el apartado que salen las sesiones, tienes que darle en databases, y te saldra el boton de crear una nueva database
