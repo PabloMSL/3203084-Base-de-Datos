@@ -35,8 +35,28 @@ Una situación clave es la transición de 3NF a la Forma Normal de Boyce-Codd (B
 
 ### 4. ¿Qué papel juegan las dependencias funcionales en el proceso de normalización y cómo las identificarías en una tabla?
 
+El proceso de normalización se basa en el concepto de dependencia funcional (cuando el valor de un atributo determina el valor de otro). 
+Las dependencias funcionales son, en esencia, las relaciones que la normalización busca estructurar o eliminar.
+
+Su papel es definir las anomalías (problemas) de la base de datos:
+
+- Dependencia Parcial: Define el problema a resolver en 2NF.
+- Dependencia Transitiva: Define el problema a resolver en 3NF.
+
+Para identificarlas, el artículo sugiere observar qué atributos determinan el valor de otros. Por ejemplo:
+
+- En el caso de 3NF: Si ves que el Código Postal determina la Ciudad, pero el Código Postal no es la clave principal de la tabla, has identificado una dependencia transitiva.
+- En el caso de 2NF: Si ves que un atributo (ej. nombre del cliente) depende solo de la clave del cliente, y no de la clave completa compuesta (ej. ID de Cliente + ID de Pedido), has identificado una dependencia parcial.
+
 ### 5. Explica, con tus palabras, cuándo sería justificable “desnormalizar” una base de datos según el contexto de negocio.
 
+La desnormalización es el acto de reintroducir cierta redundancia organizada en la base de datos para acelerar las consultas de datos, a costa de una integridad ligeramente menor y más complejidad en las actualizaciones.
+
+Se justifica cuando la velocidad de consulta y la disponibilidad inmediata de los datos son más importantes para el negocio que la organización perfecta de los datos, principalmente en dos contextos:
+
+- Sistemas con Alta Frecuencia de Lectura (Read-Heavy): Cuando el negocio se basa en que los usuarios vean datos constantemente (ej. carga de páginas web, perfiles de usuario) y las escrituras/actualizaciones son poco frecuentes. Se desnormaliza para que los datos necesarios para una vista se agrupen en una sola tabla, evitando los costosos JOINS y cargando la información mucho más rápido.
+  
+- Sistemas de Reporte y Análisis (OLAP): Para acelerar la generación de informes gerenciales, dashboards y estadísticas. Se justifica almacenar datos pre-calculados (como el total de ventas diarias) directamente en una tabla, de modo que el sistema no tenga que realizar grandes cálculos y uniones cada vez que un usuario abre un reporte.
 ## Parte 2: Caso Fred’s Furniture
 ### Retos y resultados
 (Descripción de cada reto, decisiones y código relevante)
