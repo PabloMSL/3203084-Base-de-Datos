@@ -167,7 +167,8 @@ CREATE TABLE order_details (
 ~~~
 
 ### Modelo E-R final
-(Incluir imagen o enlace)
+
+![Titulo alterno](FredsFurniture.PNG)
 
 ### Reglas de negocio
 Las reglas de negocio definen cómo funciona el sistema de ventas y la relación entre las entidades:
@@ -197,7 +198,8 @@ Conclusión: Este diseño garantiza la integridad de los datos y facilita la ges
 Este proyecto consiste en el diseño y la implementación de un modelo de base de datos relacional (DBMS) para gestionar las citas, los registros de pacientes, el personal médico y los tratamientos dentro de un entorno hospitalario. El objetivo principal es eliminar la redundancia de datos y garantizar la integridad mediante la normalización hasta la Tercera Forma Normal (3FN).
 
 ### Diagrama E-R
-(Imagen o enlace)
+
+![Titulo alterno](HospitalElRemedio.PNG)
 
 ### Reglas de negocio y justificación
 El diseño de la base de datos se basa en las siguientes reglas operacionales del hospital:
